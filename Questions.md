@@ -4,26 +4,26 @@
 
 | # | Problem | Pattern | Visual |
 |---|---------|---------|--------|
-| 1 | [1. Two Sum](https://leetcode.com/problems/two-sum/) | Hash map complement | `seen[target - x]` lookup |
-| 2 | [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Single pass | Track running min, profit = price − min |
-| 3 | [217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | Hash set | Insert; if exists → true |
-| 4 | [238. Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | Prefix × suffix | Two passes: left-products, right-products |
-| 5 | [53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | Kadane's | curr = max(x, curr+x); best = max(best, curr) |
-| 6 | [152. Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/) | Track min & max | Negative flips min ↔ max |
-| 7 | [153. Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | Binary search | Compare mid vs right to pick half |
-| 8 | [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | BS with rotation | One half is always sorted |
+| 1 | [1. Two Sum (OK) ](https://leetcode.com/problems/two-sum/) | Hash map complement | `seen[target - x]` lookup |
+| 2 | [121. Best Time to Buy and Sell Stock (OK) ](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Single pass | Track running min, profit = price − min |
+| 3 | [217. Contains Duplicate (OK) ](https://leetcode.com/problems/contains-duplicate/) | Hash set | Insert; if exists → true |
+| 4 | [238. Product of Array Except Self (OK) ](https://leetcode.com/problems/product-of-array-except-self/) | Prefix × suffix | Two passes: left-products, right-products |
+| 5 | [53. Maximum Subarray (OK) ](https://leetcode.com/problems/maximum-subarray/) | Kadane's | curr = max(x, curr+x); best = max(best, curr) |
+| 6 | [152. Maximum Product Subarray (OK) ](https://leetcode.com/problems/maximum-product-subarray/) | Track min & max | Negative flips min ↔ max |
+| 7 | [153. Find Minimum in Rotated Sorted Array (OK) ](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | Binary search | Compare mid vs right to pick half |
+| 8 | [33. Search in Rotated Sorted Array (OK) ](https://leetcode.com/problems/search-in-rotated-sorted-array/) | BS with rotation | One half is always sorted |
 | 9 | [15. 3Sum](https://leetcode.com/problems/3sum/) | Sort + two pointers | Fix `i`, shrink window for pair sum |
-| 10 | [11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | Two pointers | Move shorter wall inward |
+| 10 | [11. Container With Most Water (OK) ](https://leetcode.com/problems/container-with-most-water/) | Two pointers | Move shorter wall inward |
 
 ## 2. Binary (5)
 
 | # | Problem | Pattern | Visual |
 |---|---------|---------|--------|
-| 11 | [371. Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/) | Bit XOR + carry | `a^b` = sum w/o carry, `(a&b)<<1` = carry |
-| 12 | [191. Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) | `n & (n-1)` trick | Each step clears lowest set bit |
-| 13 | [338. Counting Bits](https://leetcode.com/problems/counting-bits/) | DP on bits | `dp[i] = dp[i>>1] + (i&1)` |
-| 14 | [268. Missing Number](https://leetcode.com/problems/missing-number/) | XOR or sum | XOR all indices and values |
-| 15 | [190. Reverse Bits](https://leetcode.com/problems/reverse-bits/) | Bit shift loop | Pull LSB → push to result MSB |
+| 11 | [371. Sum of Two Integers (OK) ](https://leetcode.com/problems/sum-of-two-integers/) | Bit XOR + carry | `a^b` = sum w/o carry, `(a&b)<<1` = carry |
+| 12 | [191. Number of 1 Bits (OK) ](https://leetcode.com/problems/number-of-1-bits/) | `n & (n-1)` trick | Each step clears lowest set bit |
+| 13 | [338. Counting Bits (OK) ](https://leetcode.com/problems/counting-bits/) | DP on bits | `dp[i] = dp[i>>1] + (i&1)` |
+| 14 | [268. Missing Number (OK) ](https://leetcode.com/problems/missing-number/) | XOR or sum | XOR all indices and values |
+| 15 | [190. Reverse Bits (OK) ](https://leetcode.com/problems/reverse-bits/) | Bit shift loop | Pull LSB → push to result MSB |
 
 ## 3. Dynamic Programming (11)
 
